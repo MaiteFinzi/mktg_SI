@@ -1,0 +1,475 @@
+/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+main{
+    background-color:#cfe6ee;
+    ;
+}
+
+/* Estilos gerais para a navbar */
+.navbar {
+    background:#cfe6ee;
+    color: #247BA0;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between; /* Isso distribui o espaço entre os itens */
+    align-items: center; /* Isso garante que os itens dentro da navbar estejam alinhados verticalmente */
+    position: relative;
+    z-index: 10;
+}
+
+/* Logo existente (à esquerda) */
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: auto;
+    max-width: 50px; /* Ajuste o tamanho da logo conforme necessário */
+    height: auto;
+    margin-right: 10px;
+}
+
+/* Nova logo (centralizada) */
+.logo-centralizada {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%); /* Isso vai garantir que a logo fique centralizada */
+    display: flex;
+    justify-content: center;
+}
+
+.logo-centralizada img {
+    max-width: 150px; /* Ajuste o tamanho da nova logo conforme necessário */
+    height: auto;
+}
+
+/* Ícone do menu (à direita) */
+.menu-icon {
+    font-size: 30px;
+    cursor: pointer;
+    display: block;
+    position: absolute;
+    right: 20px; /* Posiciona o ícone no canto direito */
+}
+
+
+/* Menu Lateral */
+.side-menu {
+    position: fixed;
+    top: 0;
+    left: -250px;
+    width: 250px;
+    height: 100%;
+    background-color:#13293D;
+    color: #e8f1f2;
+    opacity: 0.9;
+    transition: 0.3s;
+    padding-top: 60px;
+    z-index: 20; /* Garantir que o menu lateral fique à frente do conteúdo */
+}
+
+.side-menu ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.side-menu ul li {
+    padding: 15px;
+    text-align: center;
+}
+
+.side-menu ul li a {
+    color:#e8f1f2;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.side-menu.open {
+    left: 0;
+}
+
+/*centraliza conteudo da main*/
+.main_home {
+    text-align: center; /* Centraliza o texto dentro do main */
+    max-width: 100%; /* Limita a largura para um tamanho razoável */
+    margin: 0 auto; /* Centraliza o conteúdo horizontalmente */
+    background:#cfe6ee;
+    ;
+}
+
+/*logo sitech*/
+.logo-si{
+    width: 15%;
+    margin-top: 30px;
+}
+
+/*estiliza a palavra sitech */
+/* Estilo para o título */
+h1  {
+    font-size: 3em;
+    font-weight: bold;
+    text-align: center;
+    color: #13293D; /* Cor padrão para o texto, caso o gradiente não carregue */
+    background-color:#e8f1f2 ;
+}
+
+/* Estilo para a palavra SItech */
+.highlight {
+    background: linear-gradient(to right, #1b98e8, #13293D); /* Degradê de cores */
+    -webkit-background-clip: text; /* Garante que o fundo seja aplicado no texto */
+    background-clip: text; /* Degradê no texto */
+    color: transparent; /* Faz a palavra ficar com cor transparente para mostrar o fundo */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Sombra suave */
+}
+
+
+/* Carrossel de Produtos */
+.carousel {
+    position: relative;
+    max-width: 100%;
+    overflow: hidden;
+    z-index: 5; /* Garante que o carrossel fique atrás do menu lateral */
+}
+
+.carousel-images {
+    display: flex;
+    transition: transform 1s ease-in-out;
+}
+
+.carousel-images img {
+    width: 100%;
+    height: auto;
+    flex-shrink: 0;
+}
+
+/* Botões de navegação */
+button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color:#13293D;
+    color: #cfe6ee;
+    border: none;
+    padding: 15px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .navbar .logo-text {
+        font-size: 20px;
+    }
+
+    .menu-icon {
+        font-size: 35px;
+    }
+}
+
+/*espaço para colocar o espelho*/
+.espaço-para-espelho{
+    width: 100vw;
+    height: 100vh;
+    background: #cfe6ee;
+    display: flex;
+    justify-content: center;
+}
+
+.espelho-titulo, h1{
+    margin:0;
+    padding: 20px;
+    background-color: #cfe6ee;
+}
+
+.local-camera , #cameraContainer{
+    position: relative;
+    width: 800px;
+    height: 600px;
+    background-color: #13293D;
+    box-shadow: 2px 10px 50px rgba(16, 18, 37, 0.7);
+    border-radius: 10px;
+}
+
+#abrirCameraBtn , #capturarBtn{
+    position: relative;
+    top: 120px;
+    left:42.5%;
+    padding: 20px;
+    border-radius: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 220px;
+    height: 50px;
+    border: none;
+    outline: none;
+    color:#cfe6ee;
+    background:#276aa8;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+    font-size: 16px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    }
+    
+
+
+#capturarBtn{
+    padding: 20px;
+    border-radius: 20px;
+    top: 20%;
+    left: 36%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 700;
+}
+#capturarBtn:hover, #abrirCameraBtn:hover{
+    background: linear-gradient(45deg, #3f0aa1, #33347a, #2e0cf0, #0c45c0, #21dbf3, #002bff, #0084ffcc, #53abdf, #351eb4);
+    transition: opacity .2s ease-in-out;
+}
+
+.camera-e-captura {
+    display: flex;
+    gap: 20px; /* espaço entre vídeo e canvas */
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+  }
+  
+  .camera-e-captura video,
+  .camera-e-captura canvas {
+    width: 380px;
+    height: auto;
+    border-radius: 5px;
+    background-color: black;
+
+  }
+
+video {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-top: 10px;
+  }
+  
+  canvas {
+    width: 100%;
+    height: auto;
+    margin-top: 10px;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  .fechar-btn {
+    position: absolute;
+    top: 18px;
+    right: 2px;
+    background: #13293D;
+    border-radius: 50%;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 50%;
+  }
+
+/*estilizar o sobre-nos*/
+.sobre-nos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:100%; /* A div principal ocupa 80% da largura da página */
+    height: 500px; /* Defina a altura desejada para a div principal */
+}
+
+.section {
+    width: 25%; /* A largura de cada div interna será 25% da div principal */
+    height: 75%; /* A altura será 3 vezes maior que a largura */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #cfe6ee;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px #13293D;
+    margin: 10px;
+    transition: width 0.3s ease, transform 0.3s ease, opacity 0.3s ease; /* Transições para o aumento de largura e aparecimento do conteúdo */
+    overflow: hidden;
+    position: relative;
+    padding: 10px;
+    z-index: 0;
+}
+
+
+.h1{
+    color: #13293D;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 38px;
+    font-weight: 600;
+    text-align: center;
+    flex-shrink: 0; /* Evita que o título encolha */
+    transition: opacity 0.3s ease, transform 0.3s ease ;
+    position: absolute;/* Transição para a opacidade do título */
+    z-index: 1;
+}
+
+.conteudo-section {
+    font-size: 1.2rem;
+    text-align: center;
+    padding: 10px;
+    opacity: 0; /* O conteúdo começa invisível */
+    transition: opacity 0.3s ease;
+    flex-grow: 1; /* Faz o conteúdo ocupar o espaço restante */
+    position: absolute;
+    z-index: 0; /* Garante que o conteúdo fique abaixo do título */
+    color: #13293D;
+}
+
+/* Quando a section estiver em hover ou clicada, o título desaparece e o conteúdo aparece */
+.section:hover h1, .section.active h1 {
+    opacity: 0; /* O título desaparece */
+    transform: translateY(-20px); /* Opcional: pequeno deslocamento para efeito visual */
+}
+
+.section:hover p, .section.active p {
+    opacity: 1; /* O conteúdo aparece */
+    transform: translateY(0); /* Garante que o conteúdo ficará centralizado */
+}
+
+/* Ajuste de transições */
+.section p {
+    transform: translateY(20px); /* Faz o conteúdo começar abaixo da posição central */
+    transition: transform 0.3s ease; /* Transição para o efeito de movimento */
+}
+
+/* Adiciona um efeito para quando a section for clicada */
+.section.active {
+    cursor: pointer;
+}
+
+.equipe {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:100%; /* A div principal ocupa 80% da largura da página */
+    height: 500px; /* Defina a altura desejada para a div principal */
+}
+
+.membros{
+    width: 25%; /* A largura de cada div interna será 25% da div principal */
+    height: 75%; /* A altura será 3 vezes maior que a largura */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #cfe6ee;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px #13293D;
+    margin: 10px;
+    transition: width 0.3s ease, transform 0.3s ease, opacity 0.3s ease; /* Transições para o aumento de largura e aparecimento do conteúdo */
+    overflow: hidden;
+    position: relative;
+    z-index: 0;
+}
+
+.membros:hover {
+    width: 100%; /* Expande ao passar o mouse */
+    z-index: 10;
+    align-items: start;
+  }
+
+ .membros img{
+    height: 400px;
+ }
+
+ .membros h2.nome{
+    font-size: 32px;
+    color: #13293D !important;
+    font-weight: 500;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+ }
+
+ .membros h3.nome{
+    font-size: 28px;
+    color: #13293D !important;
+    font-weight: 500;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+ }
+
+ .info {
+    display: flex;
+    flex-direction: column;  /* Alinha o texto verticalmente */
+    justify-content: center;  /* Centraliza o conteúdo verticalmente */
+    color: #13293D !important;
+    font-size: 13px;
+    padding-right: 5px;
+    font-weight: 600;
+}
+
+/*pagina boticario*/
+.historia-boticario{
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 500;
+    font-size: 24px;
+    color: #13293D;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    left: 10%;
+}
+
+.main-boticario{
+    background-color:#cfe6ee;
+}
+
+.historia-boticario h1{
+    color: #13293D;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 500;
+}
+
+
+/* Rodapé */
+footer {
+    background-color: #13293D;
+    color:#cfe6ee;
+    text-align: center; /* Centraliza o texto */
+    padding: 20px 0; /* Espaçamento superior e inferior */
+    position: relative;
+    bottom: 0;
+    width: 100%; /* Faz com que o rodapé ocupe toda a largura da página */
+}
+
+/* Garantir que o rodapé fique no final da página */
+body, html {
+    height: 100%; /* Permite que o corpo da página ocupe toda a altura */
+    margin: 0;
+}
+
+main {
+    min-height: calc(100vh - 100px); /* Faz com que o conteúdo ocupe todo o espaço disponível, considerando o tamanho da navbar e rodapé */
+}

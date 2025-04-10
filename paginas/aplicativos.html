@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplicativos Desenvolvidos</title>
+    <link rel="icon" href="/imagens/logo-mkt-azul.png" type="image/x-icon">
+    <link rel="stylesheet" href="/frufrus/style.css"> <!-- Estilos -->
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo-container">
+            <img src="/imagens/logo-mkt-azul.png" alt="Logo da SItech" class="logo"> <!-- Logo existente -->
+        </div>
+
+        <div class="logo-centralizada">
+            <img src="/imagens/logo-boticario.png" alt="Logo do Boticário" class="logo"> <!-- Nova logo -->
+        </div>
+
+        <div class="menu-icon" id="menu-icon">
+            <span>&#9776;</span> <!-- Ícone do menu hambúrguer -->
+        </div>
+    </nav>
+
+    <!-- Menu Lateral -->
+    <div class="side-menu" id="side-menu">
+        <ul class="nav-links">
+            <li><a href="/paginas/index.html">Home</a></li>
+            <li><a href="/paginas/boticario.html">Empresas Contratantes</a></li>
+            <li><a href="/paginas/aplicativos.html">Aplicativos Desenvolvidos</a></li>
+        </ul>
+    </div>
+
+    <main>
+
+        <!-- Carrossel de Produtos -->
+        <div class="carousel" id="carousel">
+            <div class="carousel-images">
+                <img src="/imagens/maquiagem.webp" alt="Produto 1">
+                <img src="/imagens/pele.webp" alt="Produto 2">
+                <img src="/imagens/perfumes.webp" alt="Produto 3">
+            </div>
+            <button class="prev" id="prev">&#10094;</button>
+            <button class="next" id="next">&#10095;</button>
+        </div>
+        <h1 class="espelho-titulo">Espelho</h1>
+        <button id="abrirCameraBtn">Abrir Câmera</button>
+
+        <div class="espaço-para-espelho">
+            <div class="local-camera hidden" id="cameraContainer">
+                <button id="fecharCameraBtn" class="fechar-btn">X</button>
+                
+                <div class="camera-e-captura">
+                  <video id="video" autoplay></video>
+                  <canvas id="canvas" class="hidden"></canvas>
+                </div>
+              
+                <button id="capturarBtn">Capturar</button>
+              </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 SItech. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="/funcoes/script.js"></script> <!-- Arquivo JavaScript -->
+</body>
+
+</html>
