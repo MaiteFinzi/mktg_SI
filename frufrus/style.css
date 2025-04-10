@@ -190,7 +190,7 @@ button {
 }
 
 .espelho-titulo, h1{
-    margin:0;
+    margin:20px;
     padding: 20px;
     background-color: #cfe6ee;
 }
@@ -207,7 +207,7 @@ button {
 #abrirCameraBtn , #capturarBtn{
     position: relative;
     top: 120px;
-    left:42.5%;
+    left:40.5%;
     padding: 20px;
     border-radius: 20px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -215,7 +215,7 @@ button {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 220px;
+    width: auto;
     height: 50px;
     border: none;
     outline: none;
@@ -236,7 +236,7 @@ button {
     padding: 20px;
     border-radius: 20px;
     top: 20%;
-    left: 36%;
+    left: 42%;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-weight: 700;
 }
