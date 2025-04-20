@@ -46,21 +46,34 @@
             <button class="prev" id="prev">&#10094;</button>
             <button class="next" id="next">&#10095;</button>
         </div>
-        <h1 class="espelho-titulo">Espelho</h1>
+        <h1 class="espelho-titulo">Nome do Espelho</h1>
         <button id="abrirCameraBtn">Clique e surpreenda-se</button>
 
         <div class="espaço-para-espelho">
-            <div class="local-camera hidden" id="cameraContainer">
+            <div class="conteudo-lado-a-lado">
+              
+              <!-- Câmera -->
+              <div class="local-camera hidden" id="cameraContainer">
                 <button id="fecharCameraBtn" class="fechar-btn">X</button>
-                
+          
                 <div class="camera-e-captura">
                   <video id="video" autoplay></video>
                   <canvas id="canvas" class="hidden"></canvas>
                 </div>
-              
+          
                 <button id="capturarBtn">Capturar</button>
               </div>
-        </div>
+              <!-- Modal de Produtos -->
+<div id="produtoModal" class="modal hidden">
+  <div class="modal-content">
+    <span id="fecharModal" class="close">&times;</span>
+    <h2>Produtos sugeridos para skincare:</h2>
+    <ul id="listaProdutos">
+      <!-- Os produtos serão adicionados via JS -->
+    </ul>
+  </div>
+</div>
+             
     </main>
 
     <footer>
