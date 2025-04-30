@@ -189,10 +189,21 @@ button {
     justify-content: center;
 }
 
-.espelho-titulo, h1{
-    margin:20px;
+.espelho-titulo{
+    margin:80px;
     padding: 20px;
     background-color: #cfe6ee;
+    font-family: "Dancing Script", cursive;
+    font-weight: 900;
+    font-size: 100px;
+    cursor: pointer;
+    
+}
+
+.espelho-titulo:hover{
+    background: linear-gradient(45deg, #3f0aa1, #33347a, #2e0cf0, #0c45c0, #21dbf3, #002bff, #0084ffcc, #53abdf, #351eb4);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .local-camera , #cameraContainer{
