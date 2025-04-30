@@ -116,7 +116,7 @@ h1  {
     font-weight: bold;
     text-align: center;
     color: #13293D; /* Cor padrão para o texto, caso o gradiente não carregue */
-    background-color:#e8f1f2 ;
+    background-color:#cfe6ee ;
 }
 
 /* Estilo para a palavra SItech */
@@ -189,7 +189,7 @@ button {
     justify-content: center;
 }
 
-.espelho-titulo{
+.espelho-titulo {
     margin:80px;
     padding: 20px;
     background-color: #cfe6ee;
